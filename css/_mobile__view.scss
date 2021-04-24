@@ -1,0 +1,91 @@
+body{
+    background-color: rgb(191, 225, 233);
+}
+
+header{
+    .tab-pc-nav{
+        display: none;
+    }
+    background-color: rgb(53, 68, 73);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 2rem 0;
+    .logo{
+        // border: 2px solid;
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 2.5rem;
+
+        }
+    }
+    .nav-toggle{
+        display: none;
+    }
+    #nav-toggle:checked ~ *.mobile__nav{
+        visibility: visible;
+        background: #000;
+    }
+    .nav-toggle-lebel span {
+        position: absolute;
+        top: -15px;
+        left: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border: 2px solid rgb(141, 180, 175);
+    }
+    .nav-toggle-lebel span ,
+    .nav-toggle-lebel span::before,
+    .nav-toggle-lebel span::after{
+        display: block;
+        background: #fff;
+        height: 2px;
+        width: 2rem;
+        border-radius: 2px;
+        position: relative;
+    }
+    .nav-toggle-lebel span::before,
+    .nav-toggle-lebel span::after{
+        content: '';
+        position: absolute;
+    }
+    .nav-toggle-lebel span::before{
+        top: 7px;
+    }
+    .nav-toggle-lebel span::after{
+        bottom: 7px;
+        
+    }
+
+    
+    .mobile__nav{
+        position: absolute;
+        text-align: left;
+        left: 0;
+        top: 100%;
+       
+        padding: 1.5rem 3rem;
+        visibility: collapse;
+        transition: visibility  ease-in-out;
+
+        &-nav-item-list{
+            list-style: none;
+            .mobile__nav-nav-item+.mobile__nav-nav-item{
+                margin-top: .75rem;
+               
+            }
+            .mobile__nav-nav-item{
+                a{
+                    text-decoration: none;
+                    color: rgb(151, 131, 131);
+                    font-size: 2rem;
+                }
+            }
+        }
+        
+    }
+    
+}
