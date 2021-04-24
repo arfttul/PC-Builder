@@ -1,2 +1,2 @@
 # PC-Builder
- for sd-2 Masum Sir
+ This project is created for my varsity sd-2 courese. 
