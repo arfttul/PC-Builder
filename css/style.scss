@@ -20,9 +20,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 
-    @media(min-width:650px){
-
-    }
+    
 }
 .container{
     margin: 0 auto;
@@ -30,7 +28,10 @@ body{
     max-width: 1128px;
     
 }
-
+img{
+    max-width: 100%;
+    // border: 2px solid snow;
+}
 .btn{
     border: 1px solid whitesmoke;
     padding: .75rem 2rem;
