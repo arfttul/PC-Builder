@@ -1,14 +1,16 @@
-body{
-    background-color: rgb(191, 225, 233);
-}
+
 
 header{
     .tab-pc-nav{
         display: none;
     }
-    background-color: rgb(53, 68, 73);
+    background: rgb(4,3,14);
+background: -moz-linear-gradient(73deg, rgba(4,3,14,0.7374300061821604) 24%, rgba(40,49,63,0.8886905103838411) 55%);
+background: -webkit-linear-gradient(73deg, rgba(4,3,14,0.7374300061821604) 24%, rgba(40,49,63,0.8886905103838411) 55%);
+background: linear-gradient(73deg, rgba(4,3,14,0.7374300061821604) 24%, rgba(40,49,63,0.8886905103838411) 55%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#04030e",endColorstr="#28313f",GradientType=1);
     text-align: center;
-    position: fixed;
+    position: sticky;
     width: 100%;
     z-index: 999;
     padding: 2rem 0;
@@ -35,7 +37,7 @@ header{
         height: 100%;
         display: flex;
         align-items: center;
-        border: 2px solid rgb(141, 180, 175);
+        border: 2px solid rgb(226, 184, 107);
     }
     .nav-toggle-lebel span ,
     .nav-toggle-lebel span::before,
@@ -73,6 +75,11 @@ header{
 
         &-nav-item-list{
             list-style: none;
+            
+            :active{
+                background-color: #fff;
+                padding: .5rem 1rem;
+            }
             .mobile__nav-nav-item+.mobile__nav-nav-item{
                 margin-top: .75rem;
                
@@ -82,6 +89,7 @@ header{
                     text-decoration: none;
                     color: rgb(151, 131, 131);
                     font-size: 2rem;
+                    
                 }
             }
         }

@@ -1,11 +1,10 @@
-body {
-  background-color: #bfe1e9;
-}
-
 header {
-  background-color: #354449;
+  background: #04030e;
+  background: linear-gradient(73deg, rgba(4, 3, 14, 0.73743) 24%, rgba(40, 49, 63, 0.888691) 55%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#04030e",endColorstr="#28313f",GradientType=1);
   text-align: center;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   width: 100%;
   z-index: 999;
   padding: 2rem 0;
@@ -41,7 +40,7 @@ header .nav-toggle-lebel span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid #8db4af;
+  border: 2px solid #e2b86b;
 }
 
 header .nav-toggle-lebel span,
@@ -82,6 +81,11 @@ header .mobile__nav {
 
 header .mobile__nav-nav-item-list {
   list-style: none;
+}
+
+header .mobile__nav-nav-item-list :active {
+  background-color: #fff;
+  padding: .5rem 1rem;
 }
 
 header .mobile__nav-nav-item-list .mobile__nav-nav-item + .mobile__nav-nav-item {
@@ -148,6 +152,54 @@ header .mobile__nav-nav-item-list .mobile__nav-nav-item a {
   }
 }
 
+.home-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+  width: 100%;
+}
+
+.home-section .home-title {
+  font-size: 5rem;
+  text-transform: capitalize;
+  text-align: center;
+  color: #cae6eb;
+}
+
+@media (min-width: 650px) {
+  .home-section .home-title {
+    font-size: 8rem;
+  }
+}
+
+.home-section a {
+  display: inline-block;
+  margin-top: 3.5rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: 900;
+  background: #343555;
+  color: white;
+}
+
+.home-section .btn:hover {
+  background-color: none;
+  background-color: rgba(14, 1, 1, 0.562);
+  color: whitesmoke;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -158,6 +210,14 @@ header .mobile__nav-nav-item-list .mobile__nav-nav-item a {
 html {
   font-size: 10px;
   font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-image: url(https://tinyurl.com/38mmz2fb);
+  background-position: center;
+  background-color: rgba(26, 6, 6, 0.52);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -173,8 +233,8 @@ html {
 }
 
 .btn:hover {
-  background-color: rgba(197, 197, 197, 0.486);
-  color: bisque;
+  background-color: transparent;
+  color: #beb7b7;
   border: 1px solid rgba(197, 197, 197, 0.486);
   -webkit-transition: all 300ms;
   transition: all 300ms;
